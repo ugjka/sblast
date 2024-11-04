@@ -128,6 +128,10 @@ now you can run sblast with:
 
 Prebuilt Linux binaries are available on the releases [page](https://github.com/ugjka/sblast/releases)
 
+## Archlinux
+
+`paru -S sblast` or any other aur helper of your choice
+
 ## Why not use pulseaudio-dlna?
 
 This is for pipewire-pulse users.
