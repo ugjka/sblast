@@ -124,6 +124,16 @@ now you can run sblast with:
 [user@user sblast]$ ./sblast
 ```
 
+## Firewall
+
+besides opening tcp port 9000 for the audio stream, you may also need to allow in pretty rad udp port range for ssdp discovery to work
+
+ufw example, a subnet would be 192.168.1.0/24 or something like that
+
+```bash
+sudo ufw allow from <your subnet> to any port 32768:61000 proto udp
+```
+
 ## Bins
 
 Prebuilt Linux binaries are available on the releases [page](https://github.com/ugjka/sblast/releases)
