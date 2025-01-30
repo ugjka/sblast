@@ -131,7 +131,8 @@ besides opening tcp port 9000 for the audio stream, you may also need to allow i
 ufw example, a subnet would be 192.168.1.0/24 or something like that
 
 ```bash
-sudo ufw allow from <your subnet> to any port 32768:61000 proto udp
+sudo ufw insert 1 allow from <subnet> to any port 32768:61000 proto udp
+sudo ufw insert 1 allow from <subnet> to any port 9000 proto tcp
 ```
 
 ## Bins
