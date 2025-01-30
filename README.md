@@ -159,8 +159,7 @@ What on earth is "x-rincon-mp3radio"
 ## License
 
 ```
-MIT+NoAI License
-
+MIT LICENSE
 Copyright (c) 2024 Uģis Ģērmanis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -180,7 +179,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This code may not be used to train artificial intelligence computer models
-or retrieved by artificial intelligence software or hardware.
 ```
