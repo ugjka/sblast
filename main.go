@@ -162,12 +162,16 @@ func main() {
 	}
 	// on-demand handling of sblast sink
 	if sink == sblastMONITOR {
+		endianess := "LE"
+		if *uselpcm {
+			endianess = "BE"
+		}
 		sblastSink := exec.Command(
 			"pactl",
 			"load-module",
 			"module-null-sink",
 			"sink_name=sblast",
-			"format="+fmt.Sprintf("S%dLE", *bits),
+			"format="+fmt.Sprintf("S%d%s", *bits, endianess),
 			"rate="+fmt.Sprintf("%d", *rate),
 		)
 		var err error
