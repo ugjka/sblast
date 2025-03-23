@@ -23,7 +23,7 @@ import (
 const (
 	sblastMONITOR = "sblast.monitor"
 	LOGO_PATH     = "logo.png"
-	VERSION       = "v0.7.0"
+	VERSION       = "v0.7.1"
 )
 
 //go:embed logo.png
