@@ -163,7 +163,12 @@ func main() {
 	// on-demand handling of sblast sink
 	if sink == sblastMONITOR {
 		sblastSink := exec.Command(
-			"pactl", "load-module", "module-null-sink", "sink_name=sblast",
+			"pactl",
+			"load-module",
+			"module-null-sink",
+			"sink_name=sblast",
+			"format="+fmt.Sprintf("S%dLE", *bits),
+			"rate="+fmt.Sprintf("%d", *rate),
 		)
 		var err error
 		sblastSinkID, err = sblastSink.Output()
