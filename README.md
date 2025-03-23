@@ -151,6 +151,7 @@ This is for pipewire-pulse users.
 
 * You need to allow port 9000 from LAN for the DLNA receiver to be able to access the HTTP stream, you can change it with `-port` flag
 * sblast monitor sink may not be visible in the pulse control applet unless you enable virtual streams
+* For casting to BubbleUPnP android app you need to enable "More => Settings => Local Renderer => Allow remote control"
 
 ## Trivia
 
